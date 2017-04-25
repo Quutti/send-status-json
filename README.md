@@ -60,6 +60,14 @@ app.get('/path/to/api', (req, res) => {
 }
 ```
 
+## Build
+
+Run `npm run build` to compile typescript files to javascript es5. Builded content will be inserted in ./dist folder.
+
+## Tests
+
+Run `npm test` to run tests in mocha.
+
 ## License
 
 MIT.
