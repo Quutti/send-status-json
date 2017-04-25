@@ -9,8 +9,12 @@
     "test-watch": "mocha --compilers ts:ts-node/register src/**/*.spec.ts --watch",
     "build": "tsc"
   },
-  "author": "Jokke Liikkanen",
+  "author": "Jokke Liikkanen <quutticode@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Quutti/send-status-json.git"
+  },
   "dependencies": {
     "object-assign": "^4.1.1"
   },
