@@ -4,7 +4,7 @@ Express middleware that adds sendStatusJson helper method to the Express's respo
 
 ## Quick start
 
-Start with running `npm install send-status-json --save` for your app. Then, set it as a middleware to express app:
+Start with running `npm install send-status-json --save` for your app. Then, register it as a middleware to express app:
 
 ```js
 import * as express from 'express';
@@ -16,7 +16,7 @@ app.use(sendStatusJsonMiddleware());
 
 ```
 
-Then you can use it to return simple response with status envelope.
+Then you can use it to return simple response. First parameter is status code and second is an object with wanted custom properties. Properties passed in second parameter are assigned to the root of response.
 
 ```js
 
@@ -31,7 +31,7 @@ app.get('/path/to/api', (req, res) => {
 
 ```
 
-And this will result to json response (also with http status code 200)
+Response above result to the json response like this. Status code of http response is also set.
 
 ```json
 {
@@ -44,7 +44,7 @@ And this will result to json response (also with http status code 200)
 }
 ```
 
-And without added custom properties
+Usage without custom properties is simple.
 
 ```js
 app.get('/path/to/api', (req, res) => {
@@ -53,8 +53,6 @@ app.get('/path/to/api', (req, res) => {
 
 ```
 
-You will get simple json response
-
 ```json
 {
     "status": 401,
@@ -62,14 +60,6 @@ You will get simple json response
 }
 ```
 
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.)
+MIT.
