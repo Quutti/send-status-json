@@ -60,6 +60,18 @@ app.get('/path/to/api', (req, res) => {
 }
 ```
 
+If you are using TypeScript, you can extend Express Response interface with your own and set types for sendStatusJson method.
+
+```javascript
+import * as express from 'express';
+import { SendStatusJsonFunction } from 'send-status-json';
+
+interface Response extends express.Response { 
+    sendStatusJson: SendStatusJsonFunction;
+}
+```
+
+
 ## Build
 
 Run `npm run build` to compile typescript files to javascript es5. Builded content will be inserted in ./dist folder.
