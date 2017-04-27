@@ -15,6 +15,11 @@
     "type": "git",
     "url": "https://github.com/Quutti/send-status-json.git"
   },
+  "keywords": [
+    "express",
+    "response",
+    "statuscodes"
+  ],
   "dependencies": {
     "object-assign": "^4.1.1"
   },
