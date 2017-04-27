@@ -3,7 +3,7 @@ import * as sinon from 'sinon';
 
 import { sendStatusJsonMiddleware } from './send-status-json';
 
-describe("Module: send-status-json", () => {
+describe("Package: send-status-json", () => {
 
     describe("Method: sendStatusJsonMiddleware", () => {
 
