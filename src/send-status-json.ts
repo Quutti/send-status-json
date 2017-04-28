@@ -94,7 +94,7 @@ const sendStatusJson: SendStatusJsonFunction = function (statusCode: number, cus
     return this;
 }
 
-export type SendStatusJsonFunction = (statusCode: number, customProps?: object) => void;
+export type SendStatusJsonFunction = (statusCode: number, customProps?: object) => Response;
 
 /**
  * Adds sendStatusJson -method to Express's response -object
