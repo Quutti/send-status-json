@@ -1,6 +1,6 @@
 {
   "name": "send-status-json",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Express middleware that adds sendStatusJson helper method to the Express's response object",
   "main": "./dist/send-status-json.js",
   "typings": "./dist/send-status-json.d.ts",
