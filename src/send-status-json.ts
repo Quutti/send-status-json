@@ -86,11 +86,12 @@ const STATUSCODE_MAP = {
  * @param customProps      Properties to be added to response object
  */
 const sendStatusJson: SendStatusJsonFunction = function (statusCode: number, customProps: object = {}) {
-    let statusText = STATUSCODE_MAP['' + statusCode]
+    let statusText = STATUSCODE_MAP['' + statusCode] || '';
     this.status(statusCode);
     this.json(
         objectAssign({}, { status: statusCode, statusText }, customProps)
     );
+    return this;
 }
 
 export type SendStatusJsonFunction = (statusCode: number, customProps?: object) => void;
